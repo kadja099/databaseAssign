@@ -76,7 +76,7 @@ a)
 
 ```sql
 SELECT name FROM users
-	WHERE join_date < '2020-01-01'
+	WHERE join_date < '2020-01-01';
 ```
 
 b)
@@ -123,6 +123,19 @@ Add the software version to the licenses table.
 ```sql
 ALTER TABLE licenses
 	ADD COLUMN version varchar(100);
+	
+UPDATE licenses
+	SET version = '2012'
+	WHERE software_name = 'MS Word';
+	
+UPDATE licenses
+	SET version = 'v84'
+	WHERE software_name = 'Chrome';
+	
+UPDATE licenses
+	SET version = '51'
+	WHERE software_name = 'Sketch';
+
 ```
 
 b)
