@@ -29,7 +29,7 @@ Find all office spaces in Ottawa that are available March 2, 2020
 Find all users (name and email) and the property details (name, and city) and the rental information (date, and daily rate) of all rentals during the month of January 2020.
 
 ```
-σ 
+π user.name, email, office.name, city, rate (σ date = '2020-02') (user x availibility x office)
 
 ```
 
